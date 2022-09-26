@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Trinity Students</title>
+</head>
+
+<body>
+   <div class="main-box top-row">
+      <h1 class="main-title">
+         Trinity Staff
+      </h1>
+      <div>
+         <button type="button" onclick="toggleModal()">
+            Add user
+         </button>
+      </div>
+      <div id="modal-div" class="modal-box">
+         <div class="modal-content">
+
+            <fieldset class="first-section">
+               <legend>Add new user</legend>
+               <label for="user-name">Name</label>
+               <input type="text" id="user-name-input" name="user-name" autofocus placeholder="Insert a name"
+                  autocomplete="on" required>
+               <br><br>
+               <label for="role">Role</label>
+               <input type="text" name="role" id="role-input" placeholder="Insert a role">
+               <br><br>
+               <br><br>
+            </fieldset>
+
+            <button id="close-modal" type="button" onclick="toggleModal()">
+               Cancel
+            </button>
+
+            <button id="submit-user" type="button" onclick="saveUser()">
+               Save
+            </button>
+         </div>
+      </div>
+   </div>
+   <div id="main-box" class="main-box"></div>
+   <script src="script.js"></script>
+</body>
+
+</html>
