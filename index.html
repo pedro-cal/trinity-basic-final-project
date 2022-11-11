@@ -10,37 +10,49 @@
 </head>
 
 <body>
-   <div class="main-box top-row">
+   <div class="main-box header-box">
       <h1 class="main-title">
-         Trinity Staff
+         Users List
       </h1>
-      <div>
-         <button type="button" onclick="toggleModal()">
+      <div class="buttons-box">
+         <button class="header-button" type="button" onclick="toggleModal()">
             Add user
          </button>
       </div>
       <div id="modal-div" class="modal-box">
          <div class="modal-content">
 
-            <fieldset class="first-section">
-               <legend>Add new user</legend>
-               <label for="user-name">Name</label>
+            <fieldset class="form-box">
+               <legend>Add new user </legend>
+
+               <label for="user-name">Name:</label>
                <input type="text" id="user-name-input" name="user-name" autofocus placeholder="Insert a name"
                   autocomplete="on" required>
-               <br><br>
-               <label for="role">Role</label>
+
+               <label for="role">Role:</label>
                <input type="text" name="role" id="role-input" placeholder="Insert a role">
-               <br><br>
-               <br><br>
+
+               <label for="birthdate">Birthdate:</label>
+               <input type="date" name="birthdate" id="bd-input" />
+
+               <label for="mode">Mode:</label>
+               <input type="text" name="mode" id="mode-input" placeholder="How do you study?">
+
+               <label for="status">Active:</label>
+               <input type="checkbox" name="status" id="status-input" style="width:auto" />
+               <br />
             </fieldset>
 
-            <button id="close-modal" type="button" onclick="toggleModal()">
-               Cancel
-            </button>
+            <div class="form-buttons-box">
+               <button id="close-modal" type="button" onclick="toggleModal()">
+                  Cancel
+               </button>
 
-            <button id="submit-user" type="button" onclick="saveUser()">
-               Save
-            </button>
+               <button id="submit-user" type="button" onclick="saveUser()">
+                  Save
+               </button>
+            </div>
+
          </div>
       </div>
    </div>

@@ -7,16 +7,11 @@
 :root {
    --growthFactor: 6;
    --minScreen: 400;
+   --darkBlue: #283747;
 }
 
 body {
    max-width: 100vw;
-}
-
-.main-title {
-   color: white;
-   font-family: 'Helvetica', sans-serif;
-   font-size: calc(22px + var(--growthFactor) * (100vw / var(--minScreen)));
 }
 
 .main-box {
@@ -46,16 +41,87 @@ body {
 }
 
 .modal-content {
-   padding: 16px;
+   padding: 24px 16px;
    background-color: #FCFCFC;
-   width: 50%;
-   height: 50%;
+   width: 40%;
+   /* height: 50%; */
    border-radius: 10px;
-}
-
-.top-row {
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.form-box {
+   width: 90%;
+   padding: 12px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-box legend {
+   padding: 0 8px;
+}
+
+.form-box input {
+   width: 100%;
+   margin-bottom: 8px;
+}
+
+.form-buttons-box {
+   margin-top: 24px;
+   display: flex;
+   gap: 12px;
+}
+
+.form-buttons-box button {
+   border: 1px solid var(--darkBlue);
+   background-color: transparent;
+   color: var(--darkBlue);
+   font-size: small;
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border-radius: 5px;
+   padding: 6px 12px;
+}
+
+.form-buttons-box button:hover {
+   cursor: pointer;
+   background-color: #283747;
+   color: white;
+}
+
+.header-box {
+   display: flex;
+   background-color: #FCFCFC;
+   justify-content: center;
+   padding: 1.5% 10%;
+}
+
+.buttons-box {
+   justify-self: flex-end;
+}
+
+.main-title {
+   color: var(--darkBlue);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: calc(22px + var(--growthFactor) * (100vw / var(--minScreen)));
+}
+
+.header-button {
+   border: 1px solid var(--darkBlue);
+   background-color: transparent;
+   color: var(--darkBlue);
+   font-size: large;
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border-radius: 5px;
+   padding: 6px 12px;
+}
+
+.header-button:hover {
+   cursor: pointer;
+   background-color: #283747;
+   color: white;
 }
 
 .card-box {
