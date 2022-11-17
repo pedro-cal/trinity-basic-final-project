@@ -19,13 +19,13 @@ body {
    width: 100%;
    max-width: 100%;
    min-height: 100%;
-   padding: 16px;
+   padding: 3%;
    display: flex;
    justify-content: center;
    align-items: center;
    position: relative;
    flex-wrap: wrap;
-   gap: calc(8px + var(--growthFactor) * (100vw / 1280));
+   gap: calc(16px + var(--growthFactor) * (100vw / 1280));
 }
 
 .modal-box {
